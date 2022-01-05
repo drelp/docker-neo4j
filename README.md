@@ -11,6 +11,22 @@ neo4j
 123456
 
 docker-compose logs -f --tail 100 neo4j
+
+python3 build_medicalgraph.py
+python3 chat_graph.py
+
+sudo pip3 install py2neo
+sudo pip3 uninstall py2neo
+# py2neo (2021.2.3)
+pip3 install py2neo==
+sudo pip3 install py2neo==4.3.0
+
+python3 chatbot_graph.py
+sudo pip3 install ahocorasick
+```
+
+```python
+Graph("bolt://localhost:7687", auth=("neo4j", "password"))
 ```
 
 ```shell script
