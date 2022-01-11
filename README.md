@@ -7,7 +7,17 @@ sudo docker-compose up
 sudo docker-compose up -d
 
 sudo docker-compose up medical
+sudo docker-compose stop medical
 sudo docker-compose up -d medical
+
+apt-get install iputils-ping
+ping neo4j
+
+docker ps|grep medical
+docker exec -it 395a019c6380 bash
+python chatbot_graph.py
+
+python3 chatbot_graph.py
 
 http://10.2.100.2:7474/browser/
 neo4j
